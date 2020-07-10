@@ -1724,7 +1724,7 @@ kernel generation process.
 	then
 	  LSOF_CFGF="$LSOF_CFGF -DHAS_DUP2"
 	fi	# }
-	nm /usr/lib/libc.a | grep -q "W closefrom"
+	nm /usr/lib/libc.a | grep -q "[TW] closefrom"
 	if test $? -eq 0	# {
 	then
 	  LSOF_CFGF="$LSOF_CFGF -DHAS_CLOSEFROM"
