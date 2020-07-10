@@ -1,6 +1,6 @@
 freebsd13_task:
   freebsd_instance:
-    image: freebsd-13-0-current-amd64-v20200604
+    image: freebsd-13-0-current-amd64-v20200611
   timeout_in: 120m
   install_script: pkg install -y git-lite bash
   script:
