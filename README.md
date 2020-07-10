@@ -1,8 +1,8 @@
-[![Cirrus CI FreeBSD 11 Build Status](https://api.cirrus-ci.com/github/lsof-org/lsof.svg?task=freebsd11&branch=master)](https://cirrus-ci.com/github/lsof-org/lsof)
-[![Cirrus CI FreeBSD 12 Build Status](https://api.cirrus-ci.com/github/lsof-org/lsof.svg?task=freebsd12&branch=master)](https://cirrus-ci.com/github/lsof-org/lsof)
-[![Cirrus CI FreeBSD 13 Build Status](https://api.cirrus-ci.com/github/lsof-org/lsof.svg?task=freebsd13&branch=master)](https://cirrus-ci.com/github/lsof-org/lsof)
-[![Travis CI Linux Build Status](https://travis-ci.org/lsof-org/lsof.svg?branch=master)](https://travis-ci.org/lsof-org/lsof)
-[![Coveralls Linux Coverage Status on Travis CI](https://coveralls.io/repos/github/lsof-org/lsof/badge.svg?branch=master)](https://coveralls.io/github/lsof-org/lsof?branch=master)
+[![Cirrus CI FreeBSD 11 Build Status](https://api.cirrus-ci.com/github/pbiernacki/lsof.svg?task=freebsd11&branch=freebsd)](https://cirrus-ci.com/github/pbiernacki/lsof)
+[![Cirrus CI FreeBSD 12 Build Status](https://api.cirrus-ci.com/github/pbiernacki/lsof.svg?task=freebsd12&branch=freebsd)](https://cirrus-ci.com/github/pbiernacki/lsof)
+[![Cirrus CI FreeBSD 13 Build Status](https://api.cirrus-ci.com/github/pbiernacki/lsof.svg?task=freebsd13&branch=freebsd)](https://cirrus-ci.com/github/pbiernacki/lsof)
+[![Travis CI Linux Build Status](https://travis-ci.org/pbiernacki/lsof.svg?branch=freebsd)](https://travis-ci.org/pbiernacki/lsof)
+[![Coveralls Linux Coverage Status on Travis CI](https://coveralls.io/repos/github/pbiernacki/lsof/badge.svg?branch=freebsd)](https://coveralls.io/github/pbiernacki/lsof?branch=freebsd)
 
 # lsof
 The lsof-org team at GitHub takes over the maintainership of lsof
