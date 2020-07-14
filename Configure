@@ -1418,204 +1418,6 @@ kernel generation process.
     # If the FreeBSD version isn't pre-defined, determine it.
 
       case $LSOF_VSTR in	# {
-      1.*)
-	LSOF_VERS=1000
-	;;
-      2.0-*)
-	LSOF_VERS=2000
-	;;
-      2.0.5-*)
-	LSOF_VERS=2005
-	;;
-      2.1*)
-	LSOF_VERS=2010
-	;;
-      2.2*)
-	LSOF_VERS=2020
-	;;
-      3.0*)
-	LSOF_VERS=3000
-	;;
-      3.1*)
-	LSOF_VERS=3010
-	;;
-      3.2*)
-	LSOF_VERS=3020
-	;;
-      3.3*)
-	LSOF_VERS=3030
-	;;
-      3.4*)
-	LSOF_VERS=3040
-	;;
-      3.5*)
-	LSOF_VERS=3050
-	;;
-      3*)
-	LSOF_VERS=3050
-	echo "!!!WARNING!!!  Unsupported FreeBSD version: $LSOF_VSTR"
-	echo "!!!WARNING!!!  Configuring for FreeBSD 3.5"
-	;;
-      4.0*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=4000
-	;;
-      4.1-*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=4010
-	;;
-      4.2*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=4020
-	;;
-      4.3*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=4030
-	;;
-      4.4*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=4040
-	;;
-      4.5*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=4050
-	;;
-      4.6*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=4060
-	;;
-      4.7*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=4070
-	;;
-      4.8*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=4080
-	;;
-      4.9*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=4090
-	;;
-      4.10*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=4100
-	;;
-      4.11*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=4110
-	;;
-      4*)
-	LSOF_VERS=4100
-	echo "!!!WARNING!!!  Unsupported FreeBSD version: $LSOF_VSTR"
-	echo "!!!WARNING!!!  Configuring for FreeBSD 4.10"
-	;;
-      5.0*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=5000
-	;;
-      5.1*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=5010
-	;;
-      5.2*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=5020
-	;;
-      5.3*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=5030
-	;;
-      5.4*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=5040
-	;;
-      5.5*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=5050
-	;;
-      5*)
-	LSOF_VERS=5050
-	echo "!!!WARNING!!!  Unsupported FreeBSD version: $LSOF_VSTR"
-	echo "!!!WARNING!!!  Configuring for FreeBSD 5.5"
-	;;
-      6.0*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=6000
-	;;
-      6.1*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=6010
-	;;
-      6.2*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=6020
-	;;
-      6.3*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=6030
-	;;
-      6.4*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=6040
-	;;
-      6*)
-	LSOF_VERS=6000
-	echo "!!!WARNING!!!  Unsupported FreeBSD version: $LSOF_VSTR"
-	echo "!!!WARNING!!!  Configuring for FreeBSD 6.0"
-	;;
-      7.0*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=7000
-	;;
-      7.1*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=7010
-	;;
-      7.2*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=7020
-	;;
-      7.3*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=7030
-	;;
-      7.4*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=7040
-	;;
-      7*)
-	LSOF_VERS=7000
-	echo "!!!WARNING!!!  Unsupported FreeBSD version: $LSOF_VSTR"
-	echo "!!!WARNING!!!  Configuring for FreeBSD 7.0"
-	;;
-      8.0*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=8000
-	;;
-      8.1*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=8010
-	;;
-      8.2*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=8020
-	;;
-      8.3*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=8030
-	;;
-      8.4*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=8040
-	;;
-      9*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=9000
-	;;
-      10*)
-	LSOF_TSTBIGF=" "
-	LSOF_VERS=10000
-	;;
       11*)
 	LSOF_TSTBIGF=" "
 	LSOF_VERS=11000
@@ -1639,7 +1441,7 @@ kernel generation process.
     # Clear LSOF_UNSUP message for supported versions of FreeBSD.
     
     case $LSOF_VERS in  # {
-    4090|8020|8030|8040|9000|10000|11000|12000|13000)
+    11000|12000|13000)
       LSOF_UNSUP=""
       ;;
     esac	# }
@@ -1734,38 +1536,6 @@ kernel generation process.
     # Do FreeBSD version-specific stuff.
 
     case $LSOF_VERS in	# {
-    1000)
-      LSOF_CFGF="$LSOF_CFGF -DHASPROCFS"
-      LSOF_CFGL="$LSOF_CFGL -lutil"
-      LSOF_DINC="$LSOF_DINC -I`pwd`/dialects/freebsd/include"
-      if test "X$FREEBSD_KERNEL" = "X"	# {
-      then
-	LSOF_N_UNIXV="/386bsd"
-      else
-	LSOF_N_UNIXV=$FREEBSD_KERNEL
-      fi	# }
-      ;;
-    2000|2005|2010)
-      LSOF_CFGL="$LSOF_CFGL -lkvm"
-      ;;
-    2020)
-      LSOF_CFGL="$LSOF_CFGL -lkvm"
-      if test -r ${LSOF_INCLUDE}/vm/lock.h	# {
-      then
-	LSOF_CFGF="$LSOF_CFGF -DHASVMLOCKH"
-      fi	# }
-      ;;
-    3000|3010|3020|3030|3040|3050)
-      LSOF_CFGL="$LSOF_CFGL -lkvm"
-      if test -r ${LSOF_INCLUDE}/nfs/rpcv2.h	# {
-      then
-	LSOF_CFGF="$LSOF_CFGF -DHASRPCV2H"
-      fi	# }
-      if test -r ${LSOF_INCLUDE}/vm/lock.h	# {
-      then
-	LSOF_CFGF="$LSOF_CFGF -DHASVMLOCKH"
-      fi	# }
-      ;;
     *)
       if test -r ${LSOF_INCLUDE}/nfs/rpcv2.h	# {
       then
@@ -2213,37 +1983,6 @@ LOCKF_OWNER4
       ;;
     esac	# }
     LSOF_CFGF="$LSOF_CFGF -DFREEBSDV=$LSOF_VERS"
-    if test $LSOF_VERS -lt 2000 -a "X$FREEBSD_KERNEL" = "X"	# {
-    then
-      if test ! -x $LSOF_N_UNIXV	# {
-      then
-	echo "Hmmm -- $LSOF_N_UNIXV doesn't appear to be your kernel file."
-	echo "Please enter the name of the file in / that contains"
-	echo "the kernel for this host.  It must be a regular file,"
-	echo "not a directory, and must be executable."
-	LSOF_LOOP=1
-	while test $LSOF_LOOP = 1	# {
-	do
-	  echo ""
-	  echo "/ contains:"
-	  echo ""
-	  ls -CF /
-	  echo ""
-	  echo -n "Kernel file name? "
-	  read LSOF_N_UNIXV LSOF_EXCESS
-	  LSOF_N_UNIXV="/$LSOF_N_UNIXV"
-	  if test ! -d $LSOF_N_UNIXV -a -x $LSOF_N_UNIXV	# {
-	  then
-	    LSOF_LOOP=0
-	  else
-	    echo ""
-	    echo $LSOF_N_UNIXV is not a regular executable file.
-	  fi	# }
-	done	# }
-      fi	# }
-      LSOF_N_UNIXV=`echo $LSOF_N_UNIXV | sed 's#^/*#/#'`
-      LSOF_CFGF="$LSOF_CFGF -DN_UNIXV=$LSOF_N_UNIXV"
-    fi	# }
     if test -r ${FREEBSD_SYS}/miscfs/fdesc/fdesc.h	# {
     then
       LSOF_TMP1=${FREEBSD_SYS}/miscfs/fdesc/fdesc.h
@@ -2277,19 +2016,10 @@ LOCKF_OWNER4
     else
       LSOF_TMP1="miscfs"
     fi	# }
-    if test $LSOF_VERS -lt 5000	# {
-      then
-      if test -d ${FREEBSD_SYS}/${LSOF_TMP1}/procfs	# {
-      then
-	LSOF_CFGF="$LSOF_CFGF -DHASPROCFS"
-	LSOF_DINC_ADD=1
-      fi	# }
-    else
-      if test -d ${FREEBSD_SYS}/${LSOF_TMP1}/pseudofs	# {
-      then
-	LSOF_CFGF="$LSOF_CFGF -DHASPSEUDOFS"
-	LSOF_DINC_ADD=1
-      fi	# }
+    if test -d ${FREEBSD_SYS}/${LSOF_TMP1}/pseudofs	# {
+    then
+      LSOF_CFGF="$LSOF_CFGF -DHASPSEUDOFS"
+      LSOF_DINC_ADD=1
     fi	# }
     if test -r ${LSOF_INCLUDE}/${LSOF_TMP1}/nullfs/null.h	# {
     then
